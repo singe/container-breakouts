@@ -1,4 +1,4 @@
-A method of breaking out a privileged container using cgroups release notifications. The original author is @_fel1x (Felix Wilhelm) in a tweet https://twitter.com/_fel1x/status/1151487051986087936. After that Dominik Czar improved it to need fewer privileges https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
+A method of breaking out a privileged container using cgroups release notifications. The original author is @_fel1x (Felix Wilhelm) in a tweet https://twitter.com/_fel1x/status/1151487051986087936. After that @disconnect3d_pl (Dominik Czarnota) improved it to need fewer privileges https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
 
 An example:
 ```
